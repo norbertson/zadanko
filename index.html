@@ -14,7 +14,7 @@
     <button onclick="addTask()">Zaloguj</button>
     <script>
 
-showTasks();
+    showTasks();
         function addTask() {
             let login = document.getElementById('login').value;
             window.localStorage.setItem('login', login);
@@ -24,16 +24,11 @@ showTasks();
 
         }
         function showTasks() {
-            let lista = document.getElementById('lista')
+            let lista = document.getElementById('lista');
             lista.innerHTML = window.localStorage.getItem('login');
             lista.innerHTML = window.localStorage.getItem('haslo');
         }
 
-
-        </script>
-</body>
-</html>
-
-        </script>
+    </script>
 </body>
 </html>
